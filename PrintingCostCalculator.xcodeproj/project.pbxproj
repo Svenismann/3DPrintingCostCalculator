@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2681255D1E870C520080C54C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681255C1E870C520080C54C /* AppDelegate.swift */; };
+		2681255F1E870C520080C54C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681255E1E870C520080C54C /* ViewController.swift */; };
+		268125621E870C520080C54C /* PrintingCostCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 268125601E870C520080C54C /* PrintingCostCalculator.xcdatamodeld */; };
+		268125641E870C520080C54C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268125631E870C520080C54C /* Assets.xcassets */; };
+		268125671E870C520080C54C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268125651E870C520080C54C /* Main.storyboard */; };
+		268125721E870C520080C54C /* PrintingCostCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268125711E870C520080C54C /* PrintingCostCalculatorTests.swift */; };
+		2681257D1E870C520080C54C /* PrintingCostCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681257C1E870C520080C54C /* PrintingCostCalculatorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2681256E1E870C520080C54C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 268125511E870C520080C54C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 268125581E870C520080C54C;
+			remoteInfo = PrintingCostCalculator;
+		};
+		268125791E870C520080C54C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 268125511E870C520080C54C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 268125581E870C520080C54C;
+			remoteInfo = PrintingCostCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		268125591E870C520080C54C /* PrintingCostCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrintingCostCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2681255C1E870C520080C54C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2681255E1E870C520080C54C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		268125611E870C520080C54C /* PrintingCostCalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PrintingCostCalculator.xcdatamodel; sourceTree = "<group>"; };
+		268125631E870C520080C54C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		268125661E870C520080C54C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		268125681E870C520080C54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2681256D1E870C520080C54C /* PrintingCostCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintingCostCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		268125711E870C520080C54C /* PrintingCostCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintingCostCalculatorTests.swift; sourceTree = "<group>"; };
+		268125731E870C520080C54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		268125781E870C520080C54C /* PrintingCostCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintingCostCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2681257C1E870C520080C54C /* PrintingCostCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintingCostCalculatorUITests.swift; sourceTree = "<group>"; };
+		2681257E1E870C520080C54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		268125561E870C520080C54C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2681256A1E870C520080C54C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268125751E870C520080C54C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		268125501E870C520080C54C = {
+			isa = PBXGroup;
+			children = (
+				2681255B1E870C520080C54C /* PrintingCostCalculator */,
+				268125701E870C520080C54C /* PrintingCostCalculatorTests */,
+				2681257B1E870C520080C54C /* PrintingCostCalculatorUITests */,
+				2681255A1E870C520080C54C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2681255A1E870C520080C54C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				268125591E870C520080C54C /* PrintingCostCalculator.app */,
+				2681256D1E870C520080C54C /* PrintingCostCalculatorTests.xctest */,
+				268125781E870C520080C54C /* PrintingCostCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2681255B1E870C520080C54C /* PrintingCostCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				2681255C1E870C520080C54C /* AppDelegate.swift */,
+				2681255E1E870C520080C54C /* ViewController.swift */,
+				268125631E870C520080C54C /* Assets.xcassets */,
+				268125651E870C520080C54C /* Main.storyboard */,
+				268125681E870C520080C54C /* Info.plist */,
+				268125601E870C520080C54C /* PrintingCostCalculator.xcdatamodeld */,
+			);
+			path = PrintingCostCalculator;
+			sourceTree = "<group>";
+		};
+		268125701E870C520080C54C /* PrintingCostCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				268125711E870C520080C54C /* PrintingCostCalculatorTests.swift */,
+				268125731E870C520080C54C /* Info.plist */,
+			);
+			path = PrintingCostCalculatorTests;
+			sourceTree = "<group>";
+		};
+		2681257B1E870C520080C54C /* PrintingCostCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2681257C1E870C520080C54C /* PrintingCostCalculatorUITests.swift */,
+				2681257E1E870C520080C54C /* Info.plist */,
+			);
+			path = PrintingCostCalculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		268125581E870C520080C54C /* PrintingCostCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268125811E870C520080C54C /* Build configuration list for PBXNativeTarget "PrintingCostCalculator" */;
+			buildPhases = (
+				268125551E870C520080C54C /* Sources */,
+				268125561E870C520080C54C /* Frameworks */,
+				268125571E870C520080C54C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrintingCostCalculator;
+			productName = PrintingCostCalculator;
+			productReference = 268125591E870C520080C54C /* PrintingCostCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2681256C1E870C520080C54C /* PrintingCostCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268125841E870C520080C54C /* Build configuration list for PBXNativeTarget "PrintingCostCalculatorTests" */;
+			buildPhases = (
+				268125691E870C520080C54C /* Sources */,
+				2681256A1E870C520080C54C /* Frameworks */,
+				2681256B1E870C520080C54C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2681256F1E870C520080C54C /* PBXTargetDependency */,
+			);
+			name = PrintingCostCalculatorTests;
+			productName = PrintingCostCalculatorTests;
+			productReference = 2681256D1E870C520080C54C /* PrintingCostCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		268125771E870C520080C54C /* PrintingCostCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268125871E870C520080C54C /* Build configuration list for PBXNativeTarget "PrintingCostCalculatorUITests" */;
+			buildPhases = (
+				268125741E870C520080C54C /* Sources */,
+				268125751E870C520080C54C /* Frameworks */,
+				268125761E870C520080C54C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2681257A1E870C520080C54C /* PBXTargetDependency */,
+			);
+			name = PrintingCostCalculatorUITests;
+			productName = PrintingCostCalculatorUITests;
+			productReference = 268125781E870C520080C54C /* PrintingCostCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		268125511E870C520080C54C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Sven Forstner";
+				TargetAttributes = {
+					268125581E870C520080C54C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7253U9FQVY;
+						ProvisioningStyle = Automatic;
+					};
+					2681256C1E870C520080C54C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7253U9FQVY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 268125581E870C520080C54C;
+					};
+					268125771E870C520080C54C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7253U9FQVY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 268125581E870C520080C54C;
+					};
+				};
+			};
+			buildConfigurationList = 268125541E870C520080C54C /* Build configuration list for PBXProject "PrintingCostCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 268125501E870C520080C54C;
+			productRefGroup = 2681255A1E870C520080C54C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				268125581E870C520080C54C /* PrintingCostCalculator */,
+				2681256C1E870C520080C54C /* PrintingCostCalculatorTests */,
+				268125771E870C520080C54C /* PrintingCostCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		268125571E870C520080C54C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268125641E870C520080C54C /* Assets.xcassets in Resources */,
+				268125671E870C520080C54C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2681256B1E870C520080C54C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268125761E870C520080C54C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		268125551E870C520080C54C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2681255F1E870C520080C54C /* ViewController.swift in Sources */,
+				268125621E870C520080C54C /* PrintingCostCalculator.xcdatamodeld in Sources */,
+				2681255D1E870C520080C54C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268125691E870C520080C54C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268125721E870C520080C54C /* PrintingCostCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268125741E870C520080C54C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2681257D1E870C520080C54C /* PrintingCostCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2681256F1E870C520080C54C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 268125581E870C520080C54C /* PrintingCostCalculator */;
+			targetProxy = 2681256E1E870C520080C54C /* PBXContainerItemProxy */;
+		};
+		2681257A1E870C520080C54C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 268125581E870C520080C54C /* PrintingCostCalculator */;
+			targetProxy = 268125791E870C520080C54C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		268125651E870C520080C54C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				268125661E870C520080C54C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2681257F1E870C520080C54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		268125801E870C520080C54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		268125821E870C520080C54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7253U9FQVY;
+				INFOPLIST_FILE = PrintingCostCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.forstner.PrintingCostCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		268125831E870C520080C54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7253U9FQVY;
+				INFOPLIST_FILE = PrintingCostCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.forstner.PrintingCostCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		268125851E870C520080C54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7253U9FQVY;
+				INFOPLIST_FILE = PrintingCostCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.forstner.PrintingCostCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrintingCostCalculator.app/Contents/MacOS/PrintingCostCalculator";
+			};
+			name = Debug;
+		};
+		268125861E870C520080C54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7253U9FQVY;
+				INFOPLIST_FILE = PrintingCostCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.forstner.PrintingCostCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrintingCostCalculator.app/Contents/MacOS/PrintingCostCalculator";
+			};
+			name = Release;
+		};
+		268125881E870C520080C54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7253U9FQVY;
+				INFOPLIST_FILE = PrintingCostCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.forstner.PrintingCostCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PrintingCostCalculator;
+			};
+			name = Debug;
+		};
+		268125891E870C520080C54C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7253U9FQVY;
+				INFOPLIST_FILE = PrintingCostCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.forstner.PrintingCostCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PrintingCostCalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		268125541E870C520080C54C /* Build configuration list for PBXProject "PrintingCostCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2681257F1E870C520080C54C /* Debug */,
+				268125801E870C520080C54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		268125811E870C520080C54C /* Build configuration list for PBXNativeTarget "PrintingCostCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268125821E870C520080C54C /* Debug */,
+				268125831E870C520080C54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		268125841E870C520080C54C /* Build configuration list for PBXNativeTarget "PrintingCostCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268125851E870C520080C54C /* Debug */,
+				268125861E870C520080C54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		268125871E870C520080C54C /* Build configuration list for PBXNativeTarget "PrintingCostCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268125881E870C520080C54C /* Debug */,
+				268125891E870C520080C54C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		268125601E870C520080C54C /* PrintingCostCalculator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				268125611E870C520080C54C /* PrintingCostCalculator.xcdatamodel */,
+			);
+			currentVersion = 268125611E870C520080C54C /* PrintingCostCalculator.xcdatamodel */;
+			path = PrintingCostCalculator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 268125511E870C520080C54C /* Project object */;
+}
