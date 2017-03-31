@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -653,41 +655,178 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="PrintingCostCalculator" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="77" y="-60"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                <windowController storyboardIdentifier="windowController" id="B8D-0N-5wS" customClass="windowController" customModule="PrintingCostCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="550" y="346" width="600" height="400"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="600" height="400"/>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="NAn-U5-odZ" kind="relationship" relationship="window.shadowedContentViewController" id="vc4-rD-bgl"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="82" y="246"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="krI-Ox-7Gj">
+            <objects>
+                <customObject id="sBj-EX-qbI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <tabViewController selectedTabViewItemIndex="0" tabStyle="unspecified" id="NAn-U5-odZ" customClass="TabViewController" customModule="PrintingCostCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem label="1" identifier="" id="hyA-qW-qvy"/>
+                        <tabViewItem label="2" identifier="" id="rpC-XC-SKq"/>
+                        <tabViewItem label="3" id="JlW-ut-xbG"/>
+                        <tabViewItem label="4" id="Jpk-Y3-L2u"/>
+                        <tabViewItem label="5" id="WZg-5I-OLg"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="fwh-6S-gcY">
+                        <rect key="frame" x="-78" y="0.0" width="618" height="417"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <tabViewItems>
+                            <tabViewItem label="Item 0" identifier="" id="nbM-sc-0gP">
+                                <view key="view" id="zEi-Kg-w8f">
+                                    <rect key="frame" x="0.0" y="0.0" width="618" height="417"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Item 1" identifier="" id="IgE-au-PXu">
+                                <view key="view" id="ENe-dg-YmY">
+                                    <rect key="frame" x="0.0" y="0.0" width="618" height="417"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Item 2" identifier="" id="L2d-un-n05">
+                                <view key="view" id="8gA-bn-BX2">
+                                    <rect key="frame" x="0.0" y="0.0" width="618" height="417"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Item 3" identifier="" id="Hq4-eh-yUN">
+                                <view key="view" id="x4Q-zV-gXC">
+                                    <rect key="frame" x="0.0" y="0.0" width="618" height="417"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Item 4" identifier="" id="VuH-MH-rGu">
+                                <view key="view" id="9Uk-mq-h55">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </tabViewItem>
+                        </tabViewItems>
+                    </tabView>
+                    <connections>
+                        <segue destination="EYF-ca-ERd" kind="relationship" relationship="tabItems" id="beT-Lz-4GJ"/>
+                        <segue destination="QJR-M0-clH" kind="relationship" relationship="tabItems" id="sTr-f9-uy1"/>
+                        <segue destination="sI2-1R-ukl" kind="relationship" relationship="tabItems" id="58A-uz-2O8"/>
+                        <segue destination="B3w-lx-LV0" kind="relationship" relationship="tabItems" id="O0L-hd-zY0"/>
+                        <segue destination="5Ao-vM-mdD" kind="relationship" relationship="tabItems" id="ZjU-wt-GqP"/>
+                    </connections>
+                </tabViewController>
+            </objects>
+            <point key="canvasLocation" x="82" y="832.5"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="uZg-hn-Fg1">
+            <objects>
+                <customObject id="0ef-Ec-ST2" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController id="EYF-ca-ERd" customClass="StartViewController" customModule="PrintingCostCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="sOK-y8-oIb">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMc-w3-MCC">
+                                <rect key="frame" x="207" y="141" width="37" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="upW-MY-90W">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JDm-Mg-YBL">
+                                <rect key="frame" x="0.0" y="0.0" width="66" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="mYN-aU-UBo"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="JDm-Mg-YBL" secondAttribute="bottom" id="6bB-6s-skc"/>
+                            <constraint firstItem="JDm-Mg-YBL" firstAttribute="top" secondItem="sOK-y8-oIb" secondAttribute="top" id="vdZ-rn-mfQ"/>
+                            <constraint firstItem="JDm-Mg-YBL" firstAttribute="leading" secondItem="sOK-y8-oIb" secondAttribute="leading" id="xfc-nD-Zlr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="menuVIew" destination="JDm-Mg-YBL" id="5Fh-h8-GGu"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="746" y="593"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
+        <scene sceneID="TBN-1w-5Zb">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <customObject id="ccr-6r-kQA" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController id="QJR-M0-clH" sceneMemberID="viewController">
+                    <view key="view" id="AOf-5A-095">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="746" y="954"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="beS-LU-LPG">
+            <objects>
+                <customObject id="Fzp-fR-HBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController id="sI2-1R-ukl" sceneMemberID="viewController">
+                    <view key="view" id="i0U-Tl-KON">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="747" y="1320"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TBr-7w-SHT">
+            <objects>
+                <customObject id="wcl-my-IfF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController id="B3w-lx-LV0" sceneMemberID="viewController">
+                    <view key="view" id="bIQ-aD-LBB">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="746" y="1681"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yiI-vM-Ign">
+            <objects>
+                <customObject id="CEj-YH-1nM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController id="5Ao-vM-mdD" sceneMemberID="viewController">
+                    <view key="view" id="Jdy-RZ-ZdY">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="746" y="2039"/>
         </scene>
     </scenes>
 </document>

@@ -8,12 +8,28 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class ViewController: NSViewController, NSWindowDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       
+        /*window?.styleMask.insert(NSWindowStyleMask.unifiedTitleAndToolbar)
+        window?.styleMask.insert(NSWindowStyleMask.fullSizeContentView)
+        window?.styleMask.insert(NSWindowStyleMask.titled)
+        window?.toolbar?.isVisible = false
+        window?.titleVisibility = .hidden
+        window?.titlebarAppearsTransparent = true*/
+
+        
+    }
+    
+    
+    
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        
+        
     }
 
     override var representedObject: Any? {
@@ -21,7 +37,8 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
+    
+    
 
 }
 

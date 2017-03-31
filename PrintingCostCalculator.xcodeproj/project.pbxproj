@@ -14,6 +14,10 @@
 		268125671E870C520080C54C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268125651E870C520080C54C /* Main.storyboard */; };
 		268125721E870C520080C54C /* PrintingCostCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268125711E870C520080C54C /* PrintingCostCalculatorTests.swift */; };
 		2681257D1E870C520080C54C /* PrintingCostCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681257C1E870C520080C54C /* PrintingCostCalculatorUITests.swift */; };
+		268125901E8C9B2E0080C54C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2681258F1E8C9B2E0080C54C /* Extensions.swift */; };
+		268125921E8CA1A40080C54C /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268125911E8CA1A40080C54C /* TabViewController.swift */; };
+		268125941E8CA28C0080C54C /* windowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268125931E8CA28C0080C54C /* windowController.swift */; };
+		268125971E8DB17A0080C54C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268125951E8DB17A0080C54C /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		268125781E870C520080C54C /* PrintingCostCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintingCostCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2681257C1E870C520080C54C /* PrintingCostCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintingCostCalculatorUITests.swift; sourceTree = "<group>"; };
 		2681257E1E870C520080C54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2681258F1E8C9B2E0080C54C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		268125911E8CA1A40080C54C /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		268125931E8CA28C0080C54C /* windowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = windowController.swift; sourceTree = "<group>"; };
+		268125951E8DB17A0080C54C /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,12 @@
 			children = (
 				2681255C1E870C520080C54C /* AppDelegate.swift */,
 				2681255E1E870C520080C54C /* ViewController.swift */,
+				2681258F1E8C9B2E0080C54C /* Extensions.swift */,
 				268125631E870C520080C54C /* Assets.xcassets */,
 				268125651E870C520080C54C /* Main.storyboard */,
+				268125951E8DB17A0080C54C /* StartViewController.swift */,
+				268125911E8CA1A40080C54C /* TabViewController.swift */,
+				268125931E8CA28C0080C54C /* windowController.swift */,
 				268125681E870C520080C54C /* Info.plist */,
 				268125601E870C520080C54C /* PrintingCostCalculator.xcdatamodeld */,
 			);
@@ -262,8 +274,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2681255F1E870C520080C54C /* ViewController.swift in Sources */,
+				268125971E8DB17A0080C54C /* StartViewController.swift in Sources */,
 				268125621E870C520080C54C /* PrintingCostCalculator.xcdatamodeld in Sources */,
 				2681255D1E870C520080C54C /* AppDelegate.swift in Sources */,
+				268125921E8CA1A40080C54C /* TabViewController.swift in Sources */,
+				268125901E8C9B2E0080C54C /* Extensions.swift in Sources */,
+				268125941E8CA28C0080C54C /* windowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
