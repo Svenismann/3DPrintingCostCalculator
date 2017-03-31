@@ -18,7 +18,9 @@ class windowController: NSWindowController {
         self.window?.isMovableByWindowBackground = true
         //self.window?.styleMask = NSWindowStyleMask.fullSizeContentView
         //self.window?.isOpaque = false
-        //self.window?.backgroundColor = NSColor.black
+        self.window?.backgroundColor = NSColor.darkGray
+        
+        //self.window?.styleMask = NSWindowStyleMask.texturedBackground
     
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     }

@@ -15,7 +15,7 @@ class StartViewController: NSViewController {
         super.viewDidLoad()
         
         self.menuVIew.wantsLayer = true
-        self.menuVIew.layer?.backgroundColor = NSColor.black.cgColor
+        self.menuVIew.layer?.backgroundColor = NSColor.darkGray.cgColor
     }
     
 }

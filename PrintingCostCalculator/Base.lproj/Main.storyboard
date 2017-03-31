@@ -665,7 +665,7 @@
             <objects>
                 <windowController storyboardIdentifier="windowController" id="B8D-0N-5wS" customClass="windowController" customModule="PrintingCostCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="550" y="346" width="600" height="400"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
@@ -747,10 +747,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMc-w3-MCC">
-                                <rect key="frame" x="207" y="141" width="37" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="upW-MY-90W">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMc-w3-MCC">
+                                <rect key="frame" x="195" y="141" width="62" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="View One" id="upW-MY-90W">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -765,7 +764,9 @@
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="JDm-Mg-YBL" secondAttribute="bottom" id="6bB-6s-skc"/>
+                            <constraint firstItem="xMc-w3-MCC" firstAttribute="centerY" secondItem="sOK-y8-oIb" secondAttribute="centerY" id="QZJ-iW-9Ug"/>
                             <constraint firstItem="JDm-Mg-YBL" firstAttribute="top" secondItem="sOK-y8-oIb" secondAttribute="top" id="vdZ-rn-mfQ"/>
+                            <constraint firstItem="xMc-w3-MCC" firstAttribute="centerX" secondItem="sOK-y8-oIb" secondAttribute="centerX" id="vxq-lU-HYV"/>
                             <constraint firstItem="JDm-Mg-YBL" firstAttribute="leading" secondItem="sOK-y8-oIb" secondAttribute="leading" id="xfc-nD-Zlr"/>
                         </constraints>
                     </view>
