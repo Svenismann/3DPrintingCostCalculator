@@ -9,20 +9,20 @@
 import Cocoa
 
 class windowController: NSWindowController {
+    
+    var bar = NSView()
 
     override func windowDidLoad() {
         super.windowDidLoad()
         
-        self.window?.titleVisibility = NSWindowTitleVisibility.hidden
-        self.window?.titlebarAppearsTransparent = true
-        self.window?.isMovableByWindowBackground = true
-        //self.window?.styleMask = NSWindowStyleMask.fullSizeContentView
-        //self.window?.isOpaque = false
-        self.window?.backgroundColor = NSColor.darkGray
+        window?.styleMask.insert(NSWindowStyleMask.unifiedTitleAndToolbar)
+        window?.styleMask.insert(NSWindowStyleMask.fullSizeContentView)
+        window?.styleMask.insert(NSWindowStyleMask.titled)
+        window?.toolbar?.isVisible = false
+        window?.titleVisibility = .hidden
+        window?.titlebarAppearsTransparent = true
         
-        //self.window?.styleMask = NSWindowStyleMask.texturedBackground
-    
-        // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+        
     }
 
 }

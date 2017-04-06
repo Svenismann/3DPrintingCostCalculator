@@ -9,25 +9,30 @@
 import Cocoa
 
 class TabViewController: NSTabViewController {
+    
+    var nummer = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
-        /*self.view.wantsLayer = true
-        //self.view.layer?.backgroundColor = NSColor.red.cgColor
-        self.view.window?.titleVisibility = NSWindowTitleVisibility.hidden
-        self.view.window?.titlebarAppearsTransparent = true
-        self.view.window?.toolbar?.isVisible = false
-        self.view.window?.styleMask = NSWindowStyleMask.fullSizeContentView
-        
-        self.view.window?.isMovableByWindowBackground = true
         
         
-        
-        //self.tabView.isHidden = true*/
-        
+       blabla()
     }
     
+    func buckel() {
+        print("kakakakakaka")
+        //blabla()
+        nummer = 1
+        print(nummer)
+        
+        if nummer == 1 {
+            blabla()
+        }
+    }
+    
+    func blabla() {
+        tabView.selectTabViewItem(at: 1)
+    }
     
     
 }

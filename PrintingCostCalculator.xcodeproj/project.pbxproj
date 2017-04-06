@@ -18,6 +18,11 @@
 		268125921E8CA1A40080C54C /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268125911E8CA1A40080C54C /* TabViewController.swift */; };
 		268125941E8CA28C0080C54C /* windowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268125931E8CA28C0080C54C /* windowController.swift */; };
 		268125971E8DB17A0080C54C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268125951E8DB17A0080C54C /* StartViewController.swift */; };
+		26DF1A8F1E8EE717009192AB /* tab0Viewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DF1A8D1E8EE717009192AB /* tab0Viewcontroller.swift */; };
+		26DF1A931E8EF659009192AB /* tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DF1A911E8EF659009192AB /* tab1ViewController.swift */; };
+		26DF1A961E8EFE98009192AB /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DF1A951E8EFE98009192AB /* Protocols.swift */; };
+		26DF1A991E8F1C3D009192AB /* tabtabcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DF1A971E8F1C3D009192AB /* tabtabcontroller.swift */; };
+		26DF1A9A1E8F1C3D009192AB /* tabtabcontroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26DF1A981E8F1C3D009192AB /* tabtabcontroller.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		268125911E8CA1A40080C54C /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		268125931E8CA28C0080C54C /* windowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = windowController.swift; sourceTree = "<group>"; };
 		268125951E8DB17A0080C54C /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		26DF1A8D1E8EE717009192AB /* tab0Viewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tab0Viewcontroller.swift; sourceTree = "<group>"; };
+		26DF1A911E8EF659009192AB /* tab1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tab1ViewController.swift; sourceTree = "<group>"; };
+		26DF1A951E8EFE98009192AB /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		26DF1A971E8F1C3D009192AB /* tabtabcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabtabcontroller.swift; sourceTree = "<group>"; };
+		26DF1A981E8F1C3D009192AB /* tabtabcontroller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tabtabcontroller.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +120,13 @@
 				2681258F1E8C9B2E0080C54C /* Extensions.swift */,
 				268125631E870C520080C54C /* Assets.xcassets */,
 				268125651E870C520080C54C /* Main.storyboard */,
+				26DF1A971E8F1C3D009192AB /* tabtabcontroller.swift */,
+				26DF1A981E8F1C3D009192AB /* tabtabcontroller.xib */,
+				26DF1A911E8EF659009192AB /* tab1ViewController.swift */,
+				26DF1A8D1E8EE717009192AB /* tab0Viewcontroller.swift */,
 				268125951E8DB17A0080C54C /* StartViewController.swift */,
 				268125911E8CA1A40080C54C /* TabViewController.swift */,
+				26DF1A951E8EFE98009192AB /* Protocols.swift */,
 				268125931E8CA28C0080C54C /* windowController.swift */,
 				268125681E870C520080C54C /* Info.plist */,
 				268125601E870C520080C54C /* PrintingCostCalculator.xcdatamodeld */,
@@ -248,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				268125641E870C520080C54C /* Assets.xcassets in Resources */,
+				26DF1A9A1E8F1C3D009192AB /* tabtabcontroller.xib in Resources */,
 				268125671E870C520080C54C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,8 +290,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2681255F1E870C520080C54C /* ViewController.swift in Sources */,
+				26DF1A8F1E8EE717009192AB /* tab0Viewcontroller.swift in Sources */,
+				26DF1A931E8EF659009192AB /* tab1ViewController.swift in Sources */,
+				26DF1A991E8F1C3D009192AB /* tabtabcontroller.swift in Sources */,
 				268125971E8DB17A0080C54C /* StartViewController.swift in Sources */,
 				268125621E870C520080C54C /* PrintingCostCalculator.xcdatamodeld in Sources */,
+				26DF1A961E8EFE98009192AB /* Protocols.swift in Sources */,
 				2681255D1E870C520080C54C /* AppDelegate.swift in Sources */,
 				268125921E8CA1A40080C54C /* TabViewController.swift in Sources */,
 				268125901E8C9B2E0080C54C /* Extensions.swift in Sources */,
@@ -525,6 +545,7 @@
 				268125831E870C520080C54C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		268125841E870C520080C54C /* Build configuration list for PBXNativeTarget "PrintingCostCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +554,7 @@
 				268125861E870C520080C54C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		268125871E870C520080C54C /* Build configuration list for PBXNativeTarget "PrintingCostCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +563,7 @@
 				268125891E870C520080C54C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

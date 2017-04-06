@@ -672,162 +672,188 @@
                         <value key="minSize" type="size" width="600" height="400"/>
                     </window>
                     <connections>
-                        <segue destination="NAn-U5-odZ" kind="relationship" relationship="window.shadowedContentViewController" id="vc4-rD-bgl"/>
+                        <segue destination="aFr-SM-BRn" kind="relationship" relationship="window.shadowedContentViewController" id="5qr-Ay-A4y"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="82" y="246"/>
         </scene>
-        <!--Tab View Controller-->
-        <scene sceneID="krI-Ox-7Gj">
+        <!--Start View Controller-->
+        <scene sceneID="cdY-H9-tOx">
             <objects>
-                <customObject id="sBj-EX-qbI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <tabViewController selectedTabViewItemIndex="0" tabStyle="unspecified" id="NAn-U5-odZ" customClass="TabViewController" customModule="PrintingCostCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aFr-SM-BRn" customClass="StartViewController" customModule="PrintingCostCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="aTJ-tj-A8N">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="392"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="xvt-VJ-yhL">
+                                <rect key="frame" x="0.0" y="0.0" width="85" height="392"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d4S-fU-EHO">
+                                        <rect key="frame" x="2" y="344" width="81" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mBE-ob-ODR">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="btnTab0:" target="aFr-SM-BRn" id="3Fp-wz-apK"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Pa-TZ-7Dh">
+                                        <rect key="frame" x="2" y="311" width="81" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zmX-Km-lQ3">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="btnTab1:" target="aFr-SM-BRn" id="ClK-Qu-q98"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="er3-HE-tiI"/>
+                                </constraints>
+                            </customView>
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="4Kf-zf-09r">
+                                <rect key="frame" x="85" y="0.0" width="515" height="392"/>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="xvt-VJ-yhL" firstAttribute="leading" secondItem="aTJ-tj-A8N" secondAttribute="leading" id="1zY-Yj-v3D"/>
+                            <constraint firstAttribute="trailing" secondItem="4Kf-zf-09r" secondAttribute="trailing" id="BZz-kP-KLX"/>
+                            <constraint firstItem="4Kf-zf-09r" firstAttribute="leading" secondItem="xvt-VJ-yhL" secondAttribute="trailing" id="DMn-mS-e4T"/>
+                            <constraint firstItem="4Kf-zf-09r" firstAttribute="top" secondItem="aTJ-tj-A8N" secondAttribute="top" id="FT8-g6-tru"/>
+                            <constraint firstAttribute="bottom" secondItem="4Kf-zf-09r" secondAttribute="bottom" id="HER-US-TKE"/>
+                            <constraint firstAttribute="bottom" secondItem="xvt-VJ-yhL" secondAttribute="bottom" id="cn3-Oq-iLS"/>
+                            <constraint firstItem="xvt-VJ-yhL" firstAttribute="top" secondItem="aTJ-tj-A8N" secondAttribute="top" id="wXI-EO-uEJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="4Kf-zf-09r" id="X72-OL-McX"/>
+                        <outlet property="menuVIew" destination="xvt-VJ-yhL" id="GSR-NY-gb7"/>
+                    </connections>
+                </viewController>
+                <customObject id="YXA-BR-gm4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="818"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="3BJ-TO-HvU">
+            <objects>
+                <tabViewController storyboardIdentifier="storyboardTabView" selectedTabViewItemIndex="1" id="Gir-Jb-QHl" customClass="TabViewController" customModule="PrintingCostCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem label="1" identifier="" id="hyA-qW-qvy"/>
-                        <tabViewItem label="2" identifier="" id="rpC-XC-SKq"/>
-                        <tabViewItem label="3" id="JlW-ut-xbG"/>
-                        <tabViewItem label="4" id="Jpk-Y3-L2u"/>
-                        <tabViewItem label="5" id="WZg-5I-OLg"/>
+                        <tabViewItem identifier="" id="pcd-VV-yp9"/>
+                        <tabViewItem identifier="" id="ni6-g9-nXD"/>
                     </tabViewItems>
-                    <tabView key="tabView" type="noTabsNoBorder" id="fwh-6S-gcY">
-                        <rect key="frame" x="-78" y="0.0" width="618" height="417"/>
+                    <tabView key="tabView" type="noTabsNoBorder" id="Xf5-06-SaT">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <font key="font" metaFont="message"/>
-                        <tabViewItems>
-                            <tabViewItem label="Item 0" identifier="" id="nbM-sc-0gP">
-                                <view key="view" id="zEi-Kg-w8f">
-                                    <rect key="frame" x="0.0" y="0.0" width="618" height="417"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </tabViewItem>
-                            <tabViewItem label="Item 1" identifier="" id="IgE-au-PXu">
-                                <view key="view" id="ENe-dg-YmY">
-                                    <rect key="frame" x="0.0" y="0.0" width="618" height="417"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </tabViewItem>
-                            <tabViewItem label="Item 2" identifier="" id="L2d-un-n05">
-                                <view key="view" id="8gA-bn-BX2">
-                                    <rect key="frame" x="0.0" y="0.0" width="618" height="417"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </tabViewItem>
-                            <tabViewItem label="Item 3" identifier="" id="Hq4-eh-yUN">
-                                <view key="view" id="x4Q-zV-gXC">
-                                    <rect key="frame" x="0.0" y="0.0" width="618" height="417"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </tabViewItem>
-                            <tabViewItem label="Item 4" identifier="" id="VuH-MH-rGu">
-                                <view key="view" id="9Uk-mq-h55">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </tabViewItem>
-                        </tabViewItems>
+                        <tabViewItems/>
                     </tabView>
                     <connections>
-                        <segue destination="EYF-ca-ERd" kind="relationship" relationship="tabItems" id="beT-Lz-4GJ"/>
-                        <segue destination="QJR-M0-clH" kind="relationship" relationship="tabItems" id="sTr-f9-uy1"/>
-                        <segue destination="sI2-1R-ukl" kind="relationship" relationship="tabItems" id="58A-uz-2O8"/>
-                        <segue destination="B3w-lx-LV0" kind="relationship" relationship="tabItems" id="O0L-hd-zY0"/>
-                        <segue destination="5Ao-vM-mdD" kind="relationship" relationship="tabItems" id="ZjU-wt-GqP"/>
+                        <segue destination="IhJ-EK-5A0" kind="relationship" relationship="tabItems" id="FLq-ea-kdS"/>
+                        <segue destination="ywR-BC-YEF" kind="relationship" relationship="tabItems" id="4sY-dD-YIj"/>
                     </connections>
                 </tabViewController>
+                <customObject id="XHV-ex-bim" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="82" y="832.5"/>
+            <point key="canvasLocation" x="63" y="1411"/>
         </scene>
-        <!--Start View Controller-->
-        <scene sceneID="uZg-hn-Fg1">
+        <!--Tab0 Viewcontroller-->
+        <scene sceneID="czb-ar-swB">
             <objects>
-                <customObject id="0ef-Ec-ST2" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController id="EYF-ca-ERd" customClass="StartViewController" customModule="PrintingCostCalculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="sOK-y8-oIb">
+                <viewController storyboardIdentifier="tab2" id="IhJ-EK-5A0" customClass="tab0Viewcontroller" customModule="PrintingCostCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="NAF-Qs-5K3">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMc-w3-MCC">
-                                <rect key="frame" x="195" y="141" width="62" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="View One" id="upW-MY-90W">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAz-N8-A2E">
+                                <rect key="frame" x="192" y="141" width="66" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="View One " id="vsW-T9-e7J">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JDm-Mg-YBL">
-                                <rect key="frame" x="0.0" y="0.0" width="66" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="mYN-aU-UBo"/>
-                                </constraints>
-                            </customView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G69-ck-GZV">
+                                <rect key="frame" x="14" y="252" width="81" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="snJ-S7-dUw">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="btnTab:" target="IhJ-EK-5A0" id="5Sk-dJ-Bw3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="JDm-Mg-YBL" secondAttribute="bottom" id="6bB-6s-skc"/>
-                            <constraint firstItem="xMc-w3-MCC" firstAttribute="centerY" secondItem="sOK-y8-oIb" secondAttribute="centerY" id="QZJ-iW-9Ug"/>
-                            <constraint firstItem="JDm-Mg-YBL" firstAttribute="top" secondItem="sOK-y8-oIb" secondAttribute="top" id="vdZ-rn-mfQ"/>
-                            <constraint firstItem="xMc-w3-MCC" firstAttribute="centerX" secondItem="sOK-y8-oIb" secondAttribute="centerX" id="vxq-lU-HYV"/>
-                            <constraint firstItem="JDm-Mg-YBL" firstAttribute="leading" secondItem="sOK-y8-oIb" secondAttribute="leading" id="xfc-nD-Zlr"/>
+                            <constraint firstItem="YAz-N8-A2E" firstAttribute="centerX" secondItem="NAF-Qs-5K3" secondAttribute="centerX" id="CaO-BA-ow2"/>
+                            <constraint firstItem="YAz-N8-A2E" firstAttribute="centerY" secondItem="NAF-Qs-5K3" secondAttribute="centerY" id="Guw-2S-BLX"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="menuVIew" destination="JDm-Mg-YBL" id="5Fh-h8-GGu"/>
-                    </connections>
                 </viewController>
+                <customObject id="8pQ-DV-iQc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="746" y="593"/>
+            <point key="canvasLocation" x="735" y="1083"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="TBN-1w-5Zb">
+        <!--Tab1 View Controller-->
+        <scene sceneID="WAj-R5-Ni5">
             <objects>
-                <customObject id="ccr-6r-kQA" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController id="QJR-M0-clH" sceneMemberID="viewController">
-                    <view key="view" id="AOf-5A-095">
+                <viewController storyboardIdentifier="tab1" id="ywR-BC-YEF" customClass="tab1ViewController" customModule="PrintingCostCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="1dP-oh-GXh">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6x3-sI-sJC">
+                                <rect key="frame" x="194" y="142" width="62" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="View Two" id="D8a-6z-ahH">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6x3-sI-sJC" firstAttribute="centerX" secondItem="1dP-oh-GXh" secondAttribute="centerX" id="86A-qO-8fC"/>
+                            <constraint firstItem="6x3-sI-sJC" firstAttribute="centerY" secondItem="1dP-oh-GXh" secondAttribute="centerY" id="FjU-IX-LPu"/>
+                        </constraints>
                     </view>
                 </viewController>
+                <customObject id="Dce-X7-Aar" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="746" y="954"/>
+            <point key="canvasLocation" x="735" y="1444"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="beS-LU-LPG">
+        <!--Tabtabcontroller-->
+        <scene sceneID="StF-k0-HGk">
             <objects>
-                <customObject id="Fzp-fR-HBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController id="sI2-1R-ukl" sceneMemberID="viewController">
-                    <view key="view" id="i0U-Tl-KON">
+                <viewController storyboardIdentifier="tabtab" id="l2b-SX-A3w" customClass="tabtabcontroller" customModule="PrintingCostCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="wVB-KK-DHq">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EX8-S9-bDd">
+                                <rect key="frame" x="207" y="141" width="37" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="tty-Lu-6iA">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="EX8-S9-bDd" firstAttribute="centerX" secondItem="wVB-KK-DHq" secondAttribute="centerX" id="gzY-2r-rKZ"/>
+                            <constraint firstItem="EX8-S9-bDd" firstAttribute="centerY" secondItem="wVB-KK-DHq" secondAttribute="centerY" id="wrC-a6-CpI"/>
+                        </constraints>
                     </view>
                 </viewController>
+                <customObject id="dbG-hX-cGu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747" y="1320"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="TBr-7w-SHT">
-            <objects>
-                <customObject id="wcl-my-IfF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController id="B3w-lx-LV0" sceneMemberID="viewController">
-                    <view key="view" id="bIQ-aD-LBB">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="746" y="1681"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="yiI-vM-Ign">
-            <objects>
-                <customObject id="CEj-YH-1nM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController id="5Ao-vM-mdD" sceneMemberID="viewController">
-                    <view key="view" id="Jdy-RZ-ZdY">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="746" y="2039"/>
+            <point key="canvasLocation" x="734" y="1846"/>
         </scene>
     </scenes>
 </document>
